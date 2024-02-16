@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página teste HTML</title>
 </head>
+
 <body>
     <h1>Página Teste</h1>
     <p>testando, testando, testando, testando 1</p>
@@ -15,7 +17,143 @@
 
     <hr>
 
-    <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="Logo Javascript" width="22%"></br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/600px-Python_logo_01.svg.png" alt="Logo Python" width="22%">
+    <br><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+        alt="Logo Javascript" width="22%"></br>
+    <br><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/600px-Python_logo_01.svg.png"
+        alt="Logo Python" width="22%"></br>
+    <hr>
+    <h1>Formulário</h1>
+    <form>
+        <br><label for="pnome">Primeiro Nome</label></br>
+        <input type="text" id="pnome" name="pnome">
+        <br><label for="Sobrenome">Sobrenome</label></br>
+        <input type="text" id="sobrenome" name="sobrenome">
+    </form>
+    <hr>
+    <h2>Insira seu sexo</h2>
+    <form>
+        <input type="radio" id="M" name="sexo" value="Masculino">
+        <label for="M">Masculino</label></br>
+        <input type="radio" id="M" name="sexo" value="Feminino">
+        <label for="F">Feminino</label>
+    </form>
+    <hr>
+    <h2>Dentre as comidas abaixo selecione suas favoritas</h2>
+    <form>
+        <input type="checkbox" id="comida1" name="Prato" value="Strogonnof">
+        <label for="Prato">Strogonnof</label></br>
+        <input type="checkbox" id="comida2" name="Prato2" value="Hambúrguer">
+        <label for="Prato2">Hambúrguer</label></br>
+        <input type="checkbox" id="comida3" name="Prato3" value="Macarrão com Frango">
+        <label for="Prato3">Macarrão com Frango</label></br>
+        <input type="checkbox" id="comida4" name="Prato4" value="Lasanha">
+        <label for="Prato4">Lasanha</label>
+    </form>
+    <hr>
+    <input type="button" onclick="alert('Olá, como você está? eu espero que esteja tudo bem com você!!!')"
+        value="Clique aqui">
+    <hr>
+    <form>
+        <h2>Selecione uma determinada cor que você prefira</h2>
+        <label for="cor">Escolha uma cor</label>
+        <input type="color" id="cor" name="cor">
+    </form>
+    <hr>
+    <h2>Coloque a data de seu aniversário</h2>
+    <form>
+        <label for="data">Data de Nascimento</label>
+        <input type="date" id="name" name="data">
+    </form>
+    <hr>
+    <h2>Selecione Data e Hora</h2>
+    <form>
+        <label for="datahora">Escolha a data e hora</label>
+        <input type="datetime-local" id="dathora" name="datahora">
+    </form>
+    <hr>
+    <h2>Insira seu E-mail</h2>
+    <form>
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="seu email" name="email">
+    </form>
+    <hr>
+    <h2>Coloque seu Nome e Sobrenome</h2>
+    <form>
+        <label for="pnome">Nome:</label></br>
+        <input type="text" id="pnome" name="pnome"></br>
+        <label for="unome">Sobrenome</label></br>
+        <input type="text" id="unome" name="unome"></br>
+        <input type="image"
+            src="https://img1.gratispng.com/20180406/lvq/kisspng-airplane-paper-plane-submit-button-5ac76f5dde77f2.8709451115230196139112.jpg"
+            alt="Botão de enviar" width="4%">
+    </form>
+    <hr>
+    <h2>Arquivo</h2>
+    <form>
+        <label for="arquivo">Selecione um arquivo</label></br>
+        <input type="file" id="arquivo" name="arquivo">
+    </form>
+    <hr>
+    <h2>Selecione o mês e ano </h2>
+    <form>
+        <label for="mesano">Selecione o mês e ano</label>
+        <input type="month" id="mesano" name="mesano">
+    </form>
+    <hr>
+    <h2>Números</h2>
+    <form>
+        <label for="numero">Selecione sua idade</label>
+        <input type="number" id=" numero" name="numero">
+    </form>
+    <hr>
+    <h2>Selecione uma marca de carros que prefira</h2>
+    <form>
+        <label for="carros">Escolha uma marca</label>
+        <select id="carros" name="carros">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Pagani">Pagani</option>
+            <option value="Koenigsegg">Koenigsegg</option>
+        </select>
+    </form>
+    <hr>
+    <form>
+        <label for="carros">Escolha uma marca</label>
+        <select id="carros" name="carros" size="4">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Pagani">Pagani</option>
+            <option value="Koenigsegg">Koenigsegg</option>
+        </select>
+    </form>
+    <hr>
+    <h2>Área de Reclamações</h2>
+    <p>Faça as suas reclamações abaixo</p>
+    <form>
+        <textarea name="mensagem" rows="15" cols="40"></textarea>
+    </form>
+    <hr>
+    <h2>Selecione um browser de sua preferência</h2>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+    </form>
+    <hr>
+    <h2>Calculadora</h2>
+    <form>
+    
+    </form>
+
+
 </body>
 </html>
